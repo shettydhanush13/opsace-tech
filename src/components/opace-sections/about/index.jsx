@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="bg-color-primary font-color-secondary section-component">
             <h1 className="introRole">About Ospace</h1>
-            <p className="aboutMe">I'm a full stack developer working at Piktorlabs Inc. Prior to this, I worked as a software engineer at Moonraft innovation Labs, Bengaluru for 2 years. I am a graduate of UVCE, Bengaluru, where I majored in BE. I currently live in Bengaluru. When I’m not keeping busy with coding, I enjoy travelling and cooking. Moving around a lot inspired me to travel and explore the world around me. I love learning about the historical and cultural significance of the places i visit. I also maintain a travel website called Trippospace which provides one space solution for all the travel needs. My other hobbies are cooking and soccer. I love to cook and I'm getting pretty good at it. I also love to play soccer and cricket. I used to play soccer regularly before COVID hit the world. I love to watch soccer and cricket as well. My favorite teams are FC Barcelona and Royal Challegers Bengaluru.</p>
+            <p className="aboutMe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </section>
     )
 }
