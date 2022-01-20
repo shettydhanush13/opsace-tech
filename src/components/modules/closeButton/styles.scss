@@ -1,0 +1,39 @@
+.close-button {
+    $size: 50px;
+    height: $size;
+    width: $size;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    line-height: $size;
+    display: inline-block;
+    margin: 1%;
+    &:before, &:after {
+        $width: 50px;
+        $height: 10px;
+        transform: rotate(-45deg);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -$height/2;
+        margin-left: -$width/2;
+        display: block;
+        height: $height;
+        width: $width;
+        background-color: #000;
+        transition: all 0.25s ease-out;
+    }
+
+    &:after {
+        transform: rotate(-135deg);
+    }
+
+    &:hover {
+
+        &:before, &:after {
+            transform: rotate(0deg);
+        }
+    }
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.spaceFont {
+  font-family: 'Space Mono', monospace !important;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../src/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  font-style: normal;
+  src: url("../src/assets/fonts/Montserrat/Montserrat-Thin.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  src: url("../src/assets/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.font-space{
+  font-family: 'Space Mono', monospace !important;
+}
+
+.font-thin{
+  font-family: "Montserrat-Thin";
+}
+
+.relative{
+  position: relative;
+}
+
+.font-medium{
+  font-family: "Montserrat";
+}
+
+.font-bold{
+  font-family: "Montserrat-Bold";
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hideInDeskTop{
+  display: none !important;
+}
+
+.hideInMobile{
+  display: block !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.font-size-s {
+  font-size: 12px
+}
+
+.font-size-m {
+  font-size: 14px
+}
+
+.font-size-l {
+  font-size: 18px
+}
+
+.font-color-primary {
+  color : #fff
+}
+
+.font-color-secondary {
+  color : #333
+}
+
+.bg-color-primary {
+  background-color : #fff
+}
+
+.bg-color-secondary {
+  background-color : #000
+}
+
+.full-view{
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+.section-component{
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
+.noMarginTop {
+  margin-top: 0;
+}
+
+/*tablet */
+@media screen and (max-width:1100px){
+
+}
+
+/*phone */
+@media screen and (max-width:600px){
+  .full-view{
+      padding: 1vw 5vw;
+  }
+}
+
+@media screen and (max-width:600px){
+  .hideInMobile{
+    display: none !important;
+  }
+
+  .hideInDeskTop{
+    display: block !important;
+  }
+}
