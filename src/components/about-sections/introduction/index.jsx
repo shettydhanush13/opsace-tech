@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { social } from "../../../data"
-import { ScrollDown } from "../../modules";
+import { ScrollDown } from "../../../module";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faTasks } from '@fortawesome/free-solid-svg-icons'
 

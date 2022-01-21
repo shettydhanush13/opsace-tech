@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./styles.scss";
 import Workcard from "./workcard"
-import ProjectDescriptionModal from '../../../modal/ProjectDescriptionModal'
-import { projects } from '../../../data'
+import ProjectDescriptionModal from '../../modal/ProjectDescriptionModal'
+import { projects } from '../../data'
 
 const Work = () => {
     

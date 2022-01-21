@@ -1,6 +1,6 @@
 import React from 'react';
 import Skills from '../components/about-sections/skills'
-import { CloseButton } from '../components/modules'
+import { CloseButton } from '../module'
 
 const ProjectDescriptionModal = ({ activeWork }) => {
     
