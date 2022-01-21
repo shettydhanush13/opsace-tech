@@ -1,20 +1,24 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
 
-const Workcard = ({ work, click, index }) => {
+const Workcard = ({ project, click, index }) => {
+
+    const { title, logo, description } = project;
+
     useEffect(() => {
-        document.getElementById(work.title).classList.add('flatingContainer')
-    }, [work.title])
+        document?.getElementById(title)?.classList.add('flatingContainer')
+    }, [title]);
+
     return (
         <>
-        <div onClick={() => click('four', work)}  id={work.title} className={`flex flex-column flex-align-center worklist-container relative fancy-card fade-in box-${index+2} clickable`}>
-            <div id={work.title} className="worklist flex flex-column flex-align-center">
-                <img loading='lazy' src={work.logo} alt="" />
-                <p className="font-bold">{work.title}</p>
-                <p className="work-description text-center">{work.description}</p>
+        <div onClick={() => click(project)}  id={title} className={`flex flex-column flex-align-center worklist-container relative fancy-card fade-in box-${index+2} clickable`}>
+            <div id={title} className="worklist flex flex-column flex-align-center">
+                <img loading='lazy' src={logo} alt="" />
+                <p className="font-bold">{title}</p>
+                <p className="work-description text-center">{description}</p>
             </div>
-            <div class="middle"></div>
-            <div class="bottom"></div>
+            <div className="middle"></div>
+            <div className="bottom"></div>
         </div>
         </>
     )

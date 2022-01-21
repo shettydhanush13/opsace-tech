@@ -1,27 +1,31 @@
 import React, { useEffect } from 'react'
-import Header from '../../components/header'
-import './styles.scss'
-
 import {
   About,
   Work,
   Me,
   Contact
 } from "../../components/opace-sections"
+import { StarryBG } from '../../module'
+import Header from '../../components/header'
+import PageWrapper from '../../components/pageWrapper'
+import './styles.scss'
 
 const Home = () => {
+
   useEffect(() => {
       window.scrollTo(0,0)
   }, [])
-  return <section className='bg-color-secondary'>
+
+  return <>
     <Header/>
-    <section className='relative' style={{ top: 100 }}>
-        <Work/>
-        <About/>
-        <Me/>
-        <Contact/>
-    </section>
-  </section>
+    <StarryBG/>
+    <PageWrapper>
+      <Work/>
+      <About/>
+      <Me/>
+      <Contact/>
+    </PageWrapper>
+  </>
 };
 
 export default Home

@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import "./styles.css";
-import Header from '../../components/header'
-
 import {
     Introduction,
     Skills,
@@ -16,7 +14,6 @@ const About = () => {
     }, [])
     return (
         <>
-            <Header page='about'/>
             <section>
                 <Introduction/>
                 <Skills/>

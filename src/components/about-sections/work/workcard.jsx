@@ -15,12 +15,12 @@ const Workcard = ({work}) => {
                 <span className="projectLink font-thin" onClick={() => openLink(work.link)}>view</span>
                 <div className="flex workSkillContainer">
                     {work.skills.map(skill => (
-                        <img loading='lazy' src={require(`../../../assets/icons/${skill}.svg`).default} alt=""/>
+                        <img key={skill} loading='lazy' src={require(`../../../assets/icons/${skill}.svg`).default} alt=""/>
                     ))}
                 </div>
             </div>
-            <div class="middle"></div>
-            <div class="bottom"></div>
+            <div className="middle"></div>
+            <div className="bottom"></div>
         </div>
     )
 }

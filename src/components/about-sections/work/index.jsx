@@ -9,7 +9,7 @@ const Work = () => {
             <h1 className="introRole font-bold">My Work</h1>
             <h3 className="introDesc2 font-thin">Here are a few projects I've worked on recently. Want to see more? Email me.</h3>
             <div className="skillRow flex flex-wrap">
-                {workList.map(work => <Workcard work={work}/>)}
+                {workList.map((work, index) => <Workcard key={index} work={work}/>)}
             </div>
         </section>        
     )
