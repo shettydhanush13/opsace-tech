@@ -4,7 +4,7 @@ const social = [{
 },
 {
     name : "github",
-    link : ""
+    link : "https://github.com/shettydhanush13"
 },
 ]
 

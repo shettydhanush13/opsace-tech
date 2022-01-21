@@ -10,9 +10,8 @@ const ContentSection = ({ data }) => {
     const float = theme === 'light' ? 'flatingContainer' : ''
 
     const onButtonClick = () => {
-        if(link) {
-            window.open(link, "_blank")
-        } else navigate(`/${buttonRoute}`)
+        if(link) window.open(link, "_blank")
+        else navigate(`/${buttonRoute}`)
     }
 
     return (
