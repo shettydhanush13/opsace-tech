@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
-import Project from "../../components/projects"
-import { StarryBG } from '../../module'
-import Header from '../../components/header'
-import PageWrapper from '../../components/pageWrapper'
-import ContentSection from '../../components/contentSection'
 import { homeContents } from '../../data'
-import './styles.scss'
+import Wrapper from '../../hoc/routeWrapper'
+import {
+  ContentSection,
+  Project
+} from '../../components'
 
 const Home = () => {
 
@@ -13,14 +12,10 @@ const Home = () => {
       window.scrollTo(0,0)
   }, [])
 
-  return <>
-    <Header/>
-    <StarryBG/>
-    <PageWrapper>
+  return <Wrapper>
       <Project/>
       {homeContents.map(content => <ContentSection data={content}/>)}
-    </PageWrapper>
-  </>
+  </Wrapper>
 };
 
 export default Home

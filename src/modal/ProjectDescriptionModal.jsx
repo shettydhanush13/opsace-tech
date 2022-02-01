@@ -1,10 +1,4 @@
 import React from 'react';
-// import {
-//     Skills,
-//     Work,
-//     Me,
-//     Contact
-// } from '../components/about-sections'
 import { CloseButton } from '../module'
 import './styles.scss'
 
