@@ -1,65 +1,67 @@
-  #modal-container {
-    position:fixed;
-    display:table;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    transform:scale(0);
-    z-index:1;
+#modal-container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
     &.open-modal {
-      z-index:1000;
-      transform:scale(1);
+      z-index: 1000;
+      transform: scale(1);
       .modal-background {
-        background:rgba(0,0,0,.7);
+        background: rgba(0, 0, 0, 0.7);
         .modal {
           overflow-y: scroll;
-          animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
         }
         .modal::-webkit-scrollbar {
           display: none;
         }
       }
       + .content {
-        z-index:1;
-        animation:blowUpContent .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        z-index: 1;
+        animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       }
       &.out {
         .modal-background {
           .modal {
-            animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+              forwards;
           }
         }
         + .content {
-          animation: blowUpContentTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          animation: blowUpContentTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+            forwards;
         }
       }
     }
-
+  
     .modal-background {
-      display:table-cell;
-      background:rgba(0,0,0,.8);
-      text-align:center;
-      vertical-align:middle;
+      display: table-cell;
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      vertical-align: middle;
       .modal {
         width: 98vw;
         top: 110px;
         height: calc(100vh - 120px);
         left: 0;
-        position:fixed;
+        position: fixed;
         margin: 0 1vw;
-        background:white;
-        border-radius:10px;
-        font-weight:300;
+        background: white;
+        border-radius: 10px;
+        font-weight: 300;
         h2 {
-          font-size:25px;
-          line-height:25px;
-          margin-bottom:15px;
+          font-size: 25px;
+          line-height: 25px;
+          margin-bottom: 15px;
           color: #000;
         }
         p {
-          font-size:18px;
-          line-height:22px;
+          font-size: 18px;
+          line-height: 22px;
           color: #000;
         }
       }
@@ -69,48 +71,49 @@
   .modal-active {
     overflow: hidden;
   }
-
+  
   @keyframes blowUpContent {
     0% {
-      transform:scale(1);
-      opacity:1;
+      transform: scale(1);
+      opacity: 1;
     }
     99.9% {
-      transform:scale(2);
-      opacity:0;
+      transform: scale(2);
+      opacity: 0;
     }
     100% {
-      transform:scale(0);
+      transform: scale(0);
     }
   }
   
   @keyframes blowUpContentTwo {
     0% {
-      transform:scale(2);
-      opacity:0;
+      transform: scale(2);
+      opacity: 0;
     }
     100% {
-      transform:scale(1);
-      opacity:1;
+      transform: scale(1);
+      opacity: 1;
     }
   }
   
   @keyframes blowUpModal {
     0% {
-      transform:scale(0);
+      transform: scale(0);
     }
     100% {
-      transform:scale(1);
+      transform: scale(1);
     }
   }
   
   @keyframes blowUpModalTwo {
     0% {
-      transform:scale(1);
-      opacity:1;
+      transform: scale(1);
+      opacity: 1;
     }
     100% {
-      transform:scale(0);
-      opacity:0;
+      transform: scale(0);
+      opacity: 0;
     }
   }
+  
