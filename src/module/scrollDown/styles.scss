@@ -1,40 +1,40 @@
-.style1, .style2 {
-    width: 2em;
-    height: 2em;
-    background-color: transparent;
-    z-index: 80;
-    position: absolute;
-    border-width: 0 0.5em 0.5em 0;
-    border-style: solid;
-    border-color: #fff;
-    animation: scrolldown 1.2s ease-in-out infinite 0.15s;
-    left: 50%;
-    bottom: 5%;
-  }
+.style1,
 .style2 {
-    bottom: 8%;
-    border-width: 0 0.5em 0.5em 0;
-    animation: scrolldown 1.2s ease-in-out infinite;
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+  z-index: 80;
+  position: absolute;
+  border-width: 0 0.5em 0.5em 0;
+  border-style: solid;
+  border-color: #f8f7f3;
+  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+  left: 50%;
+  bottom: 5%;
+}
+.style2 {
+  bottom: 8%;
+  border-width: 0 0.5em 0.5em 0;
+  animation: scrolldown 1.2s ease-in-out infinite;
 }
 .scrollDown-text {
-    position: absolute;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    // left: 50%;
-    bottom: 17%;
+  position: absolute;
+  color: #f8f7f3;
+  width: 100%;
+  text-align: center;
+  bottom: 17%;
 }
 @keyframes scrolldown {
-    0%{
-        transform: translateX(-50%) translateY(20%) rotate(45deg);
-        opacity: 0.7;
-    }
-    50%{
-        transform: translateX(-50%) translateY(0%) rotate(45deg);
-        opacity: 0.2;
-    }
-    100%{
-        transform: translateX(-50%) translateY(20%) rotate(45deg);
-        opacity: 0.7;
-    }
+  0% {
+    transform: translateX(-50%) translateY(20%) rotate(45deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-50%) translateY(0%) rotate(45deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(-50%) translateY(20%) rotate(45deg);
+    opacity: 0.7;
+  }
 }

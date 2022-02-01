@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { homeContents } from '../../data'
-import Wrapper from '../../hoc/routeWrapper'
+import { Wrapper } from '../../hoc'
 import {
   ContentSection,
   Project
