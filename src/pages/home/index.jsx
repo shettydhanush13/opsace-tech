@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import Project from "../../components/projects"
-import { StarryBG } from '../../module'
-import Header from '../../components/header'
-import PageWrapper from '../../components/pageWrapper'
-import ContentSection from '../../components/contentSection'
-import './styles.scss'
+import { homeContents } from '../../data'
+import Wrapper from '../../hoc/routeWrapper'
+import {
+  ContentSection,
+  Project
+} from '../../components'
 
 const Home = () => {
 
@@ -12,36 +12,10 @@ const Home = () => {
       window.scrollTo(0,0)
   }, [])
 
-  const contents = [
-    {
-      title: "About Ospace",
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      theme: "dark"
-    },
-    {
-      title: "About Me",
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      theme: "light",
-      buttonText: 'More about me',
-      buttonRoute: 'about-me'
-    },
-    {
-      title: "Lets talk ?",
-      content: "Have a project you need help with, need inspiration, or just wanna talk? I’m always open.",
-      theme: "dark",
-      buttonText: 'Start a conversation',
-      link: 'https://www.linkedin.com/in/dhanush-s-shetty-731004145/'
-    }
-  ]
-
-  return <>
-    <Header/>
-    <StarryBG/>
-    <PageWrapper>
+  return <Wrapper>
       <Project/>
-      {contents.map(content => <ContentSection data={content}/>)}
-    </PageWrapper>
-  </>
+      {homeContents.map(content => <ContentSection data={content}/>)}
+  </Wrapper>
 };
 
 export default Home

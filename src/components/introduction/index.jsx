@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles.css";
-import { social } from "../../../data"
-import { ScrollDown } from "../../../module";
+import "./styles.scss";
+import { social } from "../../data"
+import { ScrollDown } from "../../module";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faTasks } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,19 +10,19 @@ const Introduction = () => {
     const download = () => {
         const link = document.createElement("a");
         link.setAttribute('download', "dhanush-s-shetty-resume");
-        link.href = require("../../../assets/profile/dhanush-s-shetty-resume.pdf").default;
+        link.href = require("../../assets/profile/dhanush-s-shetty-resume.pdf").default;
         document.body.appendChild(link);
         link.click();
         link.remove();
     }
 
     return (
-        <section className="flex flex-row bg-color-secondary font-color-primary full-view intro-container">
+        <section className="flex flex-row bg-color-secondary font-color-primary intro-container">
             <ScrollDown/>
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-            <section className="hideInMobile imageContainer flex flex-align-center">
+            <section className="hideInMobile flex flex-align-center">
                 <img loading='lazy' className="profileImage flatingContainer fade-in box-1" src={'https://www.nicepng.com/png/full/266-2666972_software-developer.png'} alt=''/>
             </section>
             <section className="flex flex-column flex-justify-center">
@@ -38,8 +38,8 @@ const Introduction = () => {
                 </div>
                 <div>
                     <ul className="contactBoxes flex flex-row flex flex-align-center fade-in box-3">
-                        {social.map(item => <li key={item.name} className="flex flex-align-center"><img onClick={() => window.open(item.link, "_blank")} src={require(`../../../assets/social/${item.name}.svg`).default} alt=""/></li>)}
-                        <li className="flex flex-align-center">Resume <img onClick={() => download()}className="download" src={require(`../../../assets/social/download.svg`).default} alt=""/></li>
+                        {social.map(item => <li key={item.name} className="flex flex-align-center"><img onClick={() => window.open(item.link, "_blank")} src={require(`../../assets/social/${item.name}.svg`).default} alt=""/></li>)}
+                        <li className="flex flex-align-center">Resume <img onClick={() => download()}className="download" src={require(`../../assets/social/download.svg`).default} alt=""/></li>
                     </ul>
                 </div>
             </section>

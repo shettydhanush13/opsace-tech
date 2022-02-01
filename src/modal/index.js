@@ -1,4 +1,4 @@
-import ProjectDescriptionModal from '../modal/ProjectDescriptionModal'
+import ProjectDescriptionModal from './ProjectDescriptionModal'
 
 export {
     ProjectDescriptionModal

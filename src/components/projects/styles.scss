@@ -1,267 +1,171 @@
-.worklist{
-    width: 21vw;
-    height: 21vw;
-    margin: 1vw;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    color: #333;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    z-index: 200;
-    position: relative;
+.worklist {
+  width: 21vw;
+  height: 21vw;
+  margin: 1vw;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  color: #333;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  z-index: 200;
+  position: relative;
 }
 
-.workSkillContainer{
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 1vw 0;
+.workSkillContainer {
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 1vw 0;
 }
 
-.projectLink{
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    cursor: pointer;
-    color: #333;
+.projectLink {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #333;
 }
 
-.workSkillContainer img{
-    width: 2em;
+.workSkillContainer img {
+  width: 2em;
 }
 
-.work-description{
-    font-size: 0.8em;
-    line-height: 1.6em;
-    height : 75%
+.work-description {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  height: 75%;
 }
-  
+
 .fancy-card .middle,
-.fancy-card .bottom{
-    position: absolute;
-    border-radius: 3px;
-    top: 0;
-    width: 21vw;
-    height: 21vw;
-    margin: 1vw;
-    transform: rotate(0deg);
-    transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
- 
-.fancy-card .middle{
-    background: #aaa;
-    z-index: 2;
+.fancy-card .bottom {
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  width: 21vw;
+  height: 21vw;
+  margin: 1vw;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.fancy-card .bottom{
-    background: #ccc;
-    z-index: 1;
+.fancy-card .middle {
+  background: #aaa;
+  z-index: 2;
 }
 
-.fancy-card:hover .middle{
-    transform: rotate(-7deg);
-    box-shadow: 1px 1px 2px rgba(74, 74, 74, 0.35);
+.fancy-card .bottom {
+  background: #ccc;
+  z-index: 1;
 }
-.fancy-card:hover .bottom{
-    transform: rotate(7deg);
-    box-shadow: 1px 1px 2px rgba(113, 113, 113, 0.35);
+
+.fancy-card:hover .middle {
+  transform: rotate(-7deg);
+  box-shadow: 1px 1px 2px rgba(74, 74, 74, 0.35);
+}
+.fancy-card:hover .bottom {
+  transform: rotate(7deg);
+  box-shadow: 1px 1px 2px rgba(113, 113, 113, 0.35);
 }
 
 /*tablet */
-@media screen and (max-width:1100px){
-
+@media screen and (max-width: 1100px) {
 }
 
 /*phone */
-@media screen and (max-width:600px){
-    .worklist{
-        width: 96vw;
-        height: fit-content;
-        margin: 1vw;
-        padding: 0.75rem;
-    }
+@media screen and (max-width: 600px) {
+  .worklist {
+    width: 96vw;
+    height: fit-content;
+    margin: 1vw;
+    padding: 0.75rem;
+  }
 
-    .work-description{
-        height: fit-content;
-    }
+  .work-description {
+    height: fit-content;
+  }
 
-    .projectLink{
-        right: 1.5rem;
-    }
+  .projectLink {
+    right: 1.5rem;
+  }
 
-    .workSkillContainer{
-        margin: 3vw 0;
-    }
+  .workSkillContainer {
+    margin: 3vw 0;
+  }
 }
 
 @keyframes fullPage {
-    100%{
-        width: 98vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100000;
-        margin: 1vw;
-        top: 50px;
-    }
+  100% {
+    width: 98vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    margin: 1vw;
+    top: 50px;
+  }
 }
 
-
-  #modal-container {
-    position:fixed;
-    display:table;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    transform:scale(0);
-    z-index:1;
-    &.open-modal {
-      z-index:1000;
-      transform:scale(1);
-      .modal-background {
-        background:rgba(0,0,0,.7);
-        .modal {
-          animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-      }
-      + .content {
-        z-index:1;
-        animation:blowUpContent .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      }
-      &.out {
-        .modal-background {
-          .modal {
-            animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          }
-        }
-        + .content {
-          animation: blowUpContentTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-      }
-    }
-
-    .modal-background {
-      display:table-cell;
-      background:rgba(0,0,0,.8);
-      text-align:center;
-      vertical-align:middle;
-      .modal {
-        width: 98vw;
-        top: 110px;
-        height: calc(100vh - 120px);
-        left: 0;
-        position:fixed;
-        margin: 0 1vw;
-        background:white;
-        border-radius:10px;
-        font-weight:300;
-        h2 {
-          font-size:25px;
-          line-height:25px;
-          margin-bottom:15px;
-          color: #000;
-        }
-        p {
-          font-size:18px;
-          line-height:22px;
-          color: #000;
-        }
-      }
-    }
-  }
-  
-  .modal-active {
-    overflow: hidden;
-  }
-
-  @keyframes blowUpContent {
-    0% {
-      transform:scale(1);
-      opacity:1;
-    }
-    99.9% {
-      transform:scale(2);
-      opacity:0;
-    }
-    100% {
-      transform:scale(0);
-    }
-  }
-  
-  @keyframes blowUpContentTwo {
-    0% {
-      transform:scale(2);
-      opacity:0;
-    }
-    100% {
-      transform:scale(1);
-      opacity:1;
-    }
-  }
-  
-  @keyframes blowUpModal {
-    0% {
-      transform:scale(0);
-    }
-    100% {
-      transform:scale(1);
-    }
-  }
-  
-  @keyframes blowUpModalTwo {
-    0% {
-      transform:scale(1);
-      opacity:1;
-    }
-    100% {
-      transform:scale(0);
-      opacity:0;
-    }
-  }
-  
-  @keyframes float {
-    0% {
-      // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
-    }
-    50% {
-      // box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-      transform: translatey(-10px);
-    }
-    100% {
-      // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
-    }
-  }
-  
-  .flatingContainer {
+@keyframes float {
+  0% {
     // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
   }
+  50% {
+    // box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
 
-
+.flatingContainer {
+  // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
 
 /* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0; /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .fade-in.box-1 {
@@ -272,7 +176,7 @@
 
 .fade-in.box-2 {
   -webkit-animation-delay: 0.9s;
-  -moz-animation-delay:0.9s;
+  -moz-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
@@ -287,6 +191,3 @@
   -moz-animation-delay: 1.8s;
   animation-delay: 1.8s;
 }
-
-  
-

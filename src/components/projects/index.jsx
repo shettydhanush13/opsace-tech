@@ -19,7 +19,7 @@ const Work = () => {
     return (
         <>
             <ProjectDescriptionModal activeWork={activeWork} setActiveWork={setActiveWork}/>
-            <section className="skillsContainer flex flex-column flex-align-center bg-color-secondary font-color-primary full-view">
+            <section className="skillsContainer flex flex-column flex-align-center bg-color-secondary font-color-primary">
                 <h1 className="introRole font-space fade-in box-1">A void space where my random ideas come into life</h1>
                 <h3 className="introDesc2 font-space fade-in box-1">Here are a few of them.</h3>
                 <div className="skillRow flex flex-wrap">

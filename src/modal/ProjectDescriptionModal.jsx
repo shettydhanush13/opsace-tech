@@ -1,6 +1,6 @@
 import React from 'react';
-import Skills from '../components/about-sections/skills'
 import { CloseButton } from '../module'
+import './styles.scss'
 
 const ProjectDescriptionModal = ({ activeWork }) => {
     
@@ -20,7 +20,6 @@ const ProjectDescriptionModal = ({ activeWork }) => {
                 <CloseButton onClick={(e) => close(e)}/>
                 <h2>{activeWork?.title}</h2>
                 <p>{activeWork?.description}</p>
-                <Skills/>
             </div>
         </div>
     </div>
