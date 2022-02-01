@@ -1,16 +1,14 @@
 .profileImage{
-    height: 80vh;
-    margin: 10vh;
+    height: calc(100vh - 100px);
+    margin: 0 10vh;
     position: relative;
-    top: 50px;
     object-fit: contain;
     transform: scale(0.9);
-    width: 55%;
-    /* border-radius: 50%; */
+    width: 50%;
 }
 
-.imageContainer{
-    width: 50%;
+.intro-container{
+    height: calc(100vh - 100px);
 }
 
 .introName{

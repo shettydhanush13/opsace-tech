@@ -3,6 +3,7 @@ import { social } from "./social"
 import { workList } from "./work"
 import { projects } from './ospaceProjects'
 import { homeContents } from './homepageContent'
+import { aboutContents } from './aboutPageContents'
 
 export {
     backendSkills,
@@ -10,5 +11,6 @@ export {
     social,
     workList,
     projects,
-    homeContents
+    homeContents,
+    aboutContents
 }
