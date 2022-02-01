@@ -1,0 +1,78 @@
+@import './fonts', './theme';
+
+.relative {
+  position: relative;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+iframe {
+  display: none;
+}
+
+.hideInDeskTop {
+  display: none !important;
+}
+
+.hideInMobile {
+  display: block !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
+.noMarginTop {
+  margin-top: 0;
+}

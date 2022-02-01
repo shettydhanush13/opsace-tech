@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './styles/index.scss';
 import Router from './router';
 import { stopReportingRuntimeErrors } from "react-error-overlay";
 

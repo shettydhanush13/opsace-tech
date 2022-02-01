@@ -1,0 +1,23 @@
+.bg-color-primary {
+  background-color: #fff;
+}
+
+.bg-color-secondary {
+  background-color: #000;
+}
+
+.primaryButton {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: #333;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.primaryButton:hover {
+  transform: scale(1.1);
+  transition: transform 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}

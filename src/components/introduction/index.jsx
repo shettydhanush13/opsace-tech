@@ -17,7 +17,7 @@ const Introduction = () => {
     }
 
     return (
-        <section className="flex flex-row bg-color-secondary font-color-primary full-view intro-container">
+        <section className="flex flex-row bg-color-secondary font-color-primary intro-container">
             <ScrollDown/>
             <div id='stars'></div>
             <div id='stars2'></div>
