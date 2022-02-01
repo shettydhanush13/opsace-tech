@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./styles.scss";
-import Workcard from "./workcard"
+import ProjectCard from "./projectCard"
 import ProjectDescriptionModal from '../../modal/ProjectDescriptionModal'
 import { projects } from '../../data'
+import "./styles.scss";
 
 const Work = () => {
     
@@ -23,7 +23,7 @@ const Work = () => {
                 <h1 className="introRole font-space fade-in box-1">A void space where my random ideas come into life</h1>
                 <h3 className="introDesc2 font-space fade-in box-1">Here are a few of them.</h3>
                 <div className="skillRow flex flex-wrap">
-                    {projects.map((project, index) => <Workcard key={index} project={project} index={index} click={open}/>)}
+                    {projects.map((project, index) => <ProjectCard key={index} project={project} index={index} click={open}/>)}
                 </div>
             </section>   
         </>     
