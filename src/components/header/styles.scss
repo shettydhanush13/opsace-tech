@@ -23,4 +23,11 @@ header {
     text-shadow: 0 0 7px #f8f7f3, 0 0 10px #f8f7f3, 0 0 21px #f8f7f3, 0 0 42px #0fa,
       0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+        height: 75px;
+        justify-content: center;
+    }
+  } 
   

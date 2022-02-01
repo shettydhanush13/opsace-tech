@@ -25,7 +25,7 @@ const Introduction = () => {
             <section className="hideInMobile flex flex-align-center">
                 <img loading='lazy' className="profileImage flatingContainer fade-in box-1" src={'https://www.nicepng.com/png/full/266-2666972_software-developer.png'} alt=''/>
             </section>
-            <section className="flex flex-column flex-justify-center">
+            <section className="flex flex-column flex-justify-center introduction-section">
                 <div className="introContainer">
                     <div className="introName noMargin">
                         <h1 className='noMarginTop fade-in box-2'>Hi, I'm Dhanush</h1>
