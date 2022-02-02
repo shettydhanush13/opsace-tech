@@ -39,4 +39,4 @@ const About = () => {
     </Wrapper>
 }
 
-export default About
+export default About 
