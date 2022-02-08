@@ -23,7 +23,7 @@ const Introduction = () => {
             <div id='stars2'></div>
             <div id='stars3'></div>
             <section className="hideInMobile flex flex-align-center">
-                <img loading='lazy' className="profileImage flatingContainer fade-in box-1" src={'https://www.nicepng.com/png/full/266-2666972_software-developer.png'} alt=''/>
+                <img loading='lazy' className="profileImage flatingContainer fade-in box-1" src={require('../../assets/profile/profile.png').default} alt=''/>
             </section>
             <section className="flex flex-column flex-justify-center introduction-section">
                 <div className="introContainer">
@@ -32,7 +32,7 @@ const Introduction = () => {
                     </div>
                     <div className="introRoleContainer fade-in box-2">
                         <p className="introRole">Full-Stack Developer</p>
-                        <p className="introAddress"><FontAwesomeIcon icon={faMapMarkerAlt}/>&nbsp;&nbsp;Somewhere between web 2.0 and web 3.0</p>
+                        {/* <p className="introAddress"><FontAwesomeIcon icon={faMapMarkerAlt}/>&nbsp;&nbsp;Somewhere between web 2.0 and web 3.0</p> */}
                         <p className="introDesc"><FontAwesomeIcon icon={faTasks}/>&nbsp;&nbsp;Travelling or cooking when not coding</p>
                     </div>
                 </div>

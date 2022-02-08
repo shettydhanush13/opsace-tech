@@ -1,11 +1,11 @@
 const frontEndskills = [
     {
-        title : "HTML 5",
-        image : "html5"
+        title : "HTML",
+        image : "html"
     },
     {
-        title : "CSS 3",
-        image : "css3"
+        title : "CSS",
+        image : "css"
     },
     {
         title : "JavaScript",
@@ -20,8 +20,8 @@ const frontEndskills = [
         image : "react"
     },
     {
-        title : "Solidity",
-        image : "solidity"
+        title : "Next.js",
+        image : "next-js"
     },
 ]
 
@@ -29,14 +29,6 @@ const backendSkills = [
     {
         title : "NodeJs",
         image : "nodejs"
-    },
-    {
-        title : "MongoDB",
-        image : "mongo"
-    },
-    {
-        title : "Elasticsearch",
-        image : "elasticsearch"
     },
     {
         title : "PostgreSQL",
@@ -47,8 +39,16 @@ const backendSkills = [
         image : "aws"
     },
     {
+        title : "MongoDB",
+        image : "mongo"
+    },
+    {
         title : "Mocha",
         image : "mocha"
+    },
+    {
+        title : "Solidity",
+        image : "solidity"
     }
 ]
 
