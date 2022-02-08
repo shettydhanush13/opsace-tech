@@ -1,7 +1,7 @@
 const workList = [
     {
         title : "Jazz serverless",
-        skills : ["html5", "css3", "angular", "git"],
+        skills : ["html", "css", "angular", "git"],
         discription : "Built UI for Jazz, a serverless development platform, accelerates adoption of serverless technology within enterprise that lets developers quickly create serverless applications.",
         link : "https://www.youtube.com/watch?v=6Kp1yxMjn1k"
     },
@@ -19,7 +19,7 @@ const workList = [
     },
     {
         title : "Covid tracker",
-        skills : ["html5", "css3", "d3", "react"],
+        skills : ["html", "css", "d3", "react"],
         discription : "Built Data visualization UI for Covid Tracker application which shows the glanceable update of COVID's impact by country",
         link : "https://dash-covid-19-new.web.app/"
     },
