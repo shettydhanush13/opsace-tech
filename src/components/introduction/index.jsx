@@ -3,7 +3,7 @@ import "./styles.scss";
 import { social } from "../../data"
 import { ScrollDown } from "../../module";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faTasks } from '@fortawesome/free-solid-svg-icons'
+import { faTasks } from '@fortawesome/free-solid-svg-icons'
 
 const Introduction = () => {
 

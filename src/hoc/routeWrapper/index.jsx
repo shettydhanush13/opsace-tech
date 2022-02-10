@@ -4,11 +4,11 @@ import {
 import { StarryBG } from '../../module'
 import './styles.scss'
 
-const Wrapper = ({ children }) => {
+const Wrapper = ({ children, page }) => {
     return <>
-        <Header/>
+        {page !== 'about' && <Header/>}
         <StarryBG/>
-        <section className='pageWrapper'>{children}</section>
+        <section className={page === 'about' ? '' : 'pageWrapper'}>{children}</section>
     </>
 }
 
