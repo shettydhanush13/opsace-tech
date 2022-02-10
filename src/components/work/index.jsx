@@ -12,7 +12,9 @@ const Workcard = ({ work }) => {
         <FancyCard>
             <p className="font-bold">{work.title}</p>
             <p className="work-description text-center">{work.discription}</p>
-            <span className="projectLink font-thin" onClick={() => openLink(work.link)}>view</span>
+            {work.github && <img height={40} className='projectLink' onClick={() => window.open(work.github, "_blank")} src={require(`../../assets/social/github_black.svg`).default} alt=""/>}
+            {work.buttonText && <button className='primaryButton' onClick={() => openLink(work.link)}>{work.buttonText}</button>}
+            <br />
             <div className="flex workSkillContainer">
                 {work.skills.map(skill => (
                     <img key={skill} loading='lazy' src={require(`../../assets/icons/${skill}.svg`).default} alt=""/>

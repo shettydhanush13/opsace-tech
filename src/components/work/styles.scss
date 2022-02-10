@@ -19,9 +19,11 @@
   }
   
   .projectLink {
+    width: 40px !important;
+    height: 40px;
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 1rem;
     cursor: pointer;
     color: #292929;
   }
